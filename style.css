@@ -1,0 +1,60 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	background: #121212;
+}
+.wrapper {
+	/* padding: 20px 0; */
+	display: grid;
+	grid: auto auto / auto;
+	justify-items: start;
+	justify-content: center;
+	align-content: center;
+	row-gap: 20px;
+	height: 100vh;
+}
+.draggable_area {
+	position: relative;
+	height: 80vh;
+	width: 80vw;
+	background-color: rgba(54, 54, 54, 0.5019607843);
+	overflow: hidden;
+	border-radius: 15px;
+	box-shadow: 0px 0px 10px 1px #393939;
+}
+.circle {
+	position: absolute;
+	border-radius: 50%;
+	width: 120px;
+	height: 120px;
+}
+.square {
+	position: absolute;
+	/* border-radius: 50%; */
+	width: 120px;
+	height: 120px;
+}
+.dragged_element {
+	box-shadow: 0px 0px 10px 1px #b8b7b7;
+}
+.button {
+	width: 200px;
+	height: 51px;
+	color: #fff;
+	background-color: #2366f7;
+	outline: none;
+	border: none;
+	border-radius: 10px;
+	cursor: pointer;
+	font-size: 22px;
+	transition: 0.5s ease-in-out;
+}
+.button:hover {
+	box-shadow: 0px 0px 4px 1px #fff;
+}
+.button:active {
+	transform: scale(0.95);
+}
